@@ -22,11 +22,13 @@ export default function Detail(props) {
 
           <div className={styles.dt}>
            
-            <h1 className={styles.title}> {detailsstate[0].title} </h1>
+            <h3 className={styles.title}> {detailsstate[0].title} </h3>
             
-            <h3 className={styles.type} >Tipo Dieta: {detailsstate[0].typeDiets.map(t => t.name)}</h3>
+          
+            {/* <h4 className={styles.type}>Tipo de plato: {detailsstate[0].dishTypes ? detailsstate[0].dishTypes.map(d => d.name) : 'Tipo de Plato no Encontrado'}</h4> */}
+            {/* <h3 className={styles.type} >Tipo Dieta: {detailsstate[0].typeDiets.map(t => t.name)}</h3> */}
             <img className={styles.imga} src={detailsstate[0].img ? detailsstate[0].img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7SluXyPt42hC4J84iexBneyCIZO36PHodlQ&usqp=CAU'} />
-            <h4 className={styles.type}>Tipo de plato: {detailsstate[0].dishTypes ? detailsstate[0].dishTypes.map(d => d.name) : 'Tipo de Plato no Encontrado'}</h4>
+           
             <h5 className={styles.type}>resumen: {detailsstate[0].summary}</h5>
             <h5 className={styles.type}>puntuación de salud: {detailsstate[0].healthScore}</h5>
             <h5 className={styles.type}>puntuación: {detailsstate[0].spoonacularScore}</h5>
@@ -35,7 +37,7 @@ export default function Detail(props) {
           </div> :
 
           <div> <h2> cargando...
-            <img width="1200" height="450" src="https://www.visitfortmyers.com/sites/default/files/styles/low_profile_image_hero_mobile_375x256_/public/images/11_big-hickory-seafood-grille_2.jpg?h=0a8b6f8b&itok=m2m5z5Rj" alt="cargando" />
+            <img width="1200" height="450" src="https://i.pinimg.com/originals/b5/5e/12/b55e129b0dd01cbf451c4714ada1845e.gif" alt="cargando" />
           </h2>
           </div>
 

@@ -1,5 +1,12 @@
+body{
+  background-color: #cd01f6;
+
+}
 .dt {
-  background-image: url('../icons/background1.png');
+  content: attr(data-dt);
+  margin-bottom: 0.5rem;
+  margin-top: 100px;
+  background-image: url('https://i.pinimg.com/originals/f4/13/07/f413076ae519161d6d025d4a2a399441.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(12, 12, 12);
+  color: rgb(5, 5, 5);
 }
 /* .dt:hover{
   cursor: pointer;
@@ -40,7 +47,7 @@
 }
 
 .title {
-  color: #fff;
+  color: rgb(7, 7, 7);
   background: #800080;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #ffc0cb, #800080);
