@@ -16,8 +16,8 @@ export default function Home() {
     // PAGINADO SOLO PARA HOME 
 
     const [search, setSearch] = useState('') // este es para el searchBar                                    
-    const [setOrden] = useState('')
-    const [setOrder] = useState('')
+    const [orden, setOrden] = useState('')
+    const [order, setOrder] = useState('')
     const [currentPage, setCurrentPage] = useState(1)
     const [recipesPerPage] = useState(9)
     const indexLastRecipe = currentPage * recipesPerPage  //  --> esto es para el paginado

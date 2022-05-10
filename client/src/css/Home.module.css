@@ -16,18 +16,26 @@
 .select {
   text-shadow: 0 0 30px #fff, 0 0 40px #fff, 0 0 30px #f8bff0, 0 0 40px #fdbef5,
   0 0 50px #f9bff0, 0 0 70px #fdc3fd, 0 0 70px #f9b6f3;
-  color: rgb(38, 1, 37);
+  color: rgb(251, 251, 251);
   background: #800080;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ffc0cb, #800080); 
+  background: -webkit-linear-gradient(to left, #bd00bd, #c200c2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ba00b7, #c801c8); 
   cursor: pointer;
-  display: inline-block;
   justify-content: center;
   text-align: center;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 10px;
   border-style: groove;
 }
+
+.select:hover {
+  background: #ffc0cb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffc0cb, #800080);
+    /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffc0cb, #800080);
+  color: #020202;
+}
+
 
 .cards {
   height: 100%;
@@ -163,7 +171,7 @@
   text-decoration: none;
   border-radius: 10px;
   font-family: italic;
-  color: #060606;
+  color: #000000;
   font-size: 20px;
 }
 
@@ -174,20 +182,21 @@
   text-decoration: none;
   cursor: pointer;
 }
-/* width */
-::-webkit-scrollbar {
+ 
+ ::-webkit-scrollbar {
   width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 100vh;
-  background: #1f2937;
+  background: #050609;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #800080;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ffc0cb, #800080); 
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0212fd, #6d006d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #003bfc, #6b0072); 
 }
+
